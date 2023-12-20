@@ -1,0 +1,15 @@
+I have been learning PHP, since few weeks. Till this date we the major things, i have learnt in PHP are as listed below:
+    a. Crud Operation
+    b. Sessions
+    c. Cookies
+    d. Password Hashing and Password Verify
+Furthermore, I have learnt about basics PHP commands and operations. So I thought to apply my this Basics knowledge in 
+creating a project. The project is called as "iDiscuss". This website is basically a code discussion related website where
+the users are able to ask questions and others can answer it. I hope that it would be completed fully in 20days. So let's do it
+
+Day_1_Update:
+=>  During the project time, I am using XAMPP as the local server. I am coding in Visual Studio Code.
+    I am extensively using BootStraps for the website. As of today, I have copied the starter template and navigation bar.
+    Added the footer. Modified Header(Navbar) with signup and login buttons. 
+    I learned few BootStraps commands like container-fluild, mb-0, my-3 etc.
+
