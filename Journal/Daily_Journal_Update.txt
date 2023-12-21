@@ -1,4 +1,4 @@
-I have been learning PHP, since few weeks. Till this date we the major things, i have learnt in PHP are as listed below:
+I have been learning PHP, since few weeks. Till this date the major things, i have learnt in PHP are as listed below:
     a. Crud Operation
     b. Sessions
     c. Cookies
@@ -11,5 +11,17 @@ Day_1_Update:
 =>  During the project time, I am using XAMPP as the local server. I am coding in Visual Studio Code.
     I am extensively using BootStraps for the website. As of today, I have copied the starter template and navigation bar.
     Added the footer. Modified Header(Navbar) with signup and login buttons. 
-    I learned few BootStraps commands like container-fluild, mb-0, my-3 etc.
+    I learned few BootStraps commands like container-fluid, mb-0, my-3 etc.
+
+Day_2_Update:
+=>  The main thing we did today is create the table for categories. I created the 4 rows i.e category_id, category_name,
+    category_description and created. I placed Cards in the index file and used the API to fetch the images
+    The API is :https://source.unsplash.com/500x400/?programming,python. 
+    I used the carousel to make the page even more attractive and yeah used the same API to fetch the images in the page.
+    I used modal for two actions login and signup. Added up the form inside the Modal. Whenever the signup or login button
+    is clicked the modal with login or signup will appear. 
+    Added contactus page and Aboutus page.
+    Also, I learned few BootStraps commands like text-center, my-3 , col-md-4.
+
+
 
