@@ -43,30 +43,31 @@
         <div class="row">
 
             <!-- Fetch all the categories -->
-            <?php 
-            $sql= "SELECT * FROM `categories`";
-            $result=mysqli_query($conn, $sql);
-            while($row=mysqli_fetch_assoc($result)){
+            <?php
+            $sql = "SELECT * FROM `categories`";
+            $result = mysqli_query($conn, $sql);
+            while ($row = mysqli_fetch_assoc($result)) {
+                $cat=$row['category_name'];
+                $description=$row['category_description'];
                 // echo $row['category_id'];
                 // echo " ". $row['category_name'];
                 // echo " ".$row['category_description'] ."<br>";
-             echo '   <div class="col-md-4 my-3">
+                echo '   <div class="col-md-4 my-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://source.unsplash.com/500x400/?programming,python" class="card-img-top" alt="...">
+                    <img src="https://source.unsplash.com/500x400/?'.$cat.',programming" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card\'s content.</p>
+                        <h5 class="card-title">'.$cat.'</h5>
+                        <p class="card-text">'.substr($description, 0,90).'...</p>
                         <a href="#" class="btn btn-primary">View Threads</a>
                     </div>
                 </div>
             </div>';
 
             }
-             ?>
+            ?>
 
             <!-- use a for loop to iterate through the categories -->
-           
+
         </div>
     </div>
 

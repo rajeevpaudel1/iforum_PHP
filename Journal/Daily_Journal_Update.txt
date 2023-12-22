@@ -23,5 +23,9 @@ Day_2_Update:
     Added contactus page and Aboutus page.
     Also, I learned few BootStraps commands like text-center, my-3 , col-md-4.
 
-
+Day_3_Update:
+=> The najor thing was pulling data from database. You already know that we had implemented the cards in the index.php page
+    So, we manually entered the information from the database about diffrent categories. Then we fetch the information from
+    the index page. 
+    I used while loop to fetch all the information from the database. Pulling data from the database 
 
