@@ -9,9 +9,9 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <!-- login form starts -->
             <form>
-            <div class="modal-body">
-                <!-- login form starts -->
+                <div class="modal-body">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -27,13 +27,12 @@
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
-                
-                <!-- login forms ends -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </form>
+            <!-- login forms ends -->
         </div>
     </div>
 </div>
