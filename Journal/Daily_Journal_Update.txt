@@ -20,12 +20,19 @@ Day_2_Update:
     I used the carousel to make the page even more attractive and yeah used the same API to fetch the images in the page.
     I used modal for two actions login and signup. Added up the form inside the Modal. Whenever the signup or login button
     is clicked the modal with login or signup will appear. 
-    Added contactus page and Aboutus page.
+    Added contactus page and About us page.
     Also, I learned few BootStraps commands like text-center, my-3 , col-md-4.
 
 Day_3_Update:
 => The najor thing was pulling data from database. You already know that we had implemented the cards in the index.php page
     So, we manually entered the information from the database about diffrent categories. Then we fetch the information from
     the index page. 
-    I used while loop to fetch all the information from the database. Pulling data from the database 
+    I used while loop to fetch all the information from the database. The number of categories or cards made in the page is
+    according to the number of rows fetched from the database.
+
+Day_4_Update:
+=> The thing we did today was Creating a Page For Listing Threads From A Category. We used the component called Jumbotron to welcome the 
+    audiences providing the information about the particular Category. We used BootStraps component called "Media Objects" to 
+    list down all the questions asked about specific category.
+
 
