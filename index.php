@@ -56,9 +56,9 @@
                 <div class="card" style="width: 18rem;">
                     <img src="https://source.unsplash.com/400x300/?'.$cat.',programming" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">'.$cat.'</h5>
+                        <h5 class="card-title"><a href="threadlist.php">'.$cat.'</a></h5>
                         <p class="card-text">'.substr($description, 0,90).'...</p>
-                        <a href="#" class="btn btn-primary">View Threads</a>
+                        <a href="threadlist.php" class="btn btn-primary">View Threads</a>
                     </div>
                 </div>
             </div>';
