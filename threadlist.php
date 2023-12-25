@@ -26,10 +26,9 @@
             <p>This is the forum for sharing knowledge with each other.
             Posts may be deleted for any reasons the forum administrators deem reasonable.
             Pictures may be posted as long as they are not explicit, offensive, or copyrighted.
-            Members may have only one account on this forum. There is no need to have more than one.
+            Members may have only one account on this forum.There is no need to have more than one.
             Linking to hate, anti-Semitic, racist, pornography, warez, or other illegal sites is not permitted.
             Links in your signature must be unobtrusive and can not use formatting so that attention is brought to them.
-
             </p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </div>
@@ -41,9 +40,7 @@
             <img src="img/userdefault.png" width ="54px" class="mr-3" alt="...">
             <div class="media-body">
                 <h5 class="mt-0">Unable to install pyaudio error on windows</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
-                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                fringilla. Donec lacinia congue felis in faucibus.
+                Ekdam sajilo xa kehi garna pardaina, youtube hera sidhai 
             </div>
         </div>
 
