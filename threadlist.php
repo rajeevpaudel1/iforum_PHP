@@ -16,6 +16,15 @@
 <body>
     <?php include 'partials/header.php'; ?>
     <?php include 'partials/dbconnect.php'; ?>
+
+    <?php
+    $sql = "SELECT * FROM `categories`";
+    $result = mysqli_query($conn, $sql);
+    while ($row = mysqli_fetch_assoc($result)) {
+        $cat = $row['category_name'];
+        $description = $row['category_description'];
+    }
+    ?>
     <!-- category container starts here -->
     <div class="container my-4">
         <div class="jumbotron">
@@ -24,94 +33,44 @@
                 emphasizes code readability.</p>
             <hr class="my-4">
             <p>This is the forum for sharing knowledge with each other.
-            Posts may be deleted for any reasons the forum administrators deem reasonable.
-            Pictures may be posted as long as they are not explicit, offensive, or copyrighted.
-            Members may have only one account on this forum.There is no need to have more than one.
-            Linking to hate, anti-Semitic, racist, pornography, warez, or other illegal sites is not permitted.
-            Links in your signature must be unobtrusive and can not use formatting so that attention is brought to them.
+                Posts may be deleted for any reasons the forum administrators deem reasonable.
+                Pictures may be posted as long as they are not explicit, offensive, or copyrighted.
+                Members may have only one account on this forum.There is no need to have more than one.
+                Linking to hate, anti-Semitic, racist, pornography, warez, or other illegal sites is not permitted.
+                Links in your signature must be unobtrusive and can not use formatting so that attention is brought to
+                them.
             </p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mb-5" id="ques">
         <h1 class="py-2">Browse Questions</h1>
-        <div class="media my-3">
-            <img src="img/userdefault.png" width ="54px" class="mr-3" alt="...">
-            <div class="media-body">
-                <h5 class="mt-0">Unable to install pyaudio error on windows</h5>
-                Ekdam sajilo xa kehi garna pardaina, youtube hera sidhai
-            </div>
-        </div>
+        <?php
+        $id = $_GET['catid'];
+        $sql = "SELECT * FROM `threads` WHERE thread_cat_id=$id";
+        $result = mysqli_query($conn, $sql);
+        $noResult = true;
+        while ($row = mysqli_fetch_assoc($result)) {
+            $noResult = false;
+            $id = $row['thread_id'];
+            $title = $row['thread_title'];
+            $desc = $row['thread_desc'];
+            $thread_time = $row['timestamp'];
+            $thread_user_id = $row['thread_user_id'];
+            $sql2 = "SELECT user_email FROM `users` WHERE sno='$thread_user_id'";
+            $result2 = mysqli_query($conn, $sql2);
+            $row2 = mysqli_fetch_assoc($result2);
 
-        <div class="media my-3">
-            <img src="img/userdefault.png" width ="54px" class="mr-3" alt="...">
-            <div class="media-body">
-                <h5 class="mt-0">Unable to install pyaudio error on windows</h5>
-                Yetti sajilo pani aayena hehe 
-            </div>
-        </div>
-        <div class="media my-3">
-            <img src="img/userdefault.png" width ="54px" class="mr-3" alt="...">
-            <div class="media-body">
-                <h5 class="mt-0">Unable to install pyaudio error on windows</h5>
-                Voli maile sikaidinxu ghar aau mero
-            </div>
-        </div>
-        <div class="media my-3">
-            <img src="img/userdefault.png" width ="54px" class="mr-3" alt="...">
-            <div class="media-body">
-                <h5 class="mt-0">Unable to install pyaudio error on windows</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
-                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                fringilla. Donec lacinia congue felis in faucibus.
-            </div>
-        </div>
-        <div class="media my-3">
-            <img src="img/userdefault.png" width ="54px" class="mr-3" alt="...">
-            <div class="media-body">
-                <h5 class="mt-0">Unable to install pyaudio error on windows</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
-                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                fringilla. Donec lacinia congue felis in faucibus.
-            </div>
-        </div>
-        <div class="media my-3">
-            <img src="img/userdefault.png" width ="54px" class="mr-3" alt="...">
-            <div class="media-body">
-                <h5 class="mt-0">Unable to install pyaudio error on windows</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
-                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                fringilla. Donec lacinia congue felis in faucibus.
-            </div>
-        </div>
-        <div class="media my-3">
-            <img src="img/userdefault.png" width ="54px" class="mr-3" alt="...">
-            <div class="media-body">
-                <h5 class="mt-0">Unable to install pyaudio error on windows</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
-                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                fringilla. Donec lacinia congue felis in faucibus.
-            </div>
-        </div>
-        <div class="media my-3">
-            <img src="img/userdefault.png" width ="54px" class="mr-3" alt="...">
-            <div class="media-body">
-                <h5 class="mt-0">Unable to install pyaudio error on windows</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
-                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-                fringilla. Donec lacinia congue felis in faucibus.
-            </div>
-        </div>
+            echo '<div class="media my-3">
+            <img src="img/userdefault.png" width="54px" class="mr-3" alt="...">
+            <div class="media-body">' .
+                '<h5 class="mt-0"> <a class="text-dark" href="thread.php?threadid=' . $id . '">' . $title . ' </a></h5>
+                ' . $desc . ' </div>' . '<div class="font-weight-bold my-0"> Asked by: ' . $row2['user_email'] . ' at ' . $thread_time . '</div>' .
+                '</div>';
 
-
-
-
-
-
-        
-    </div>
-
+        }
+        ?>
 
     <?php include 'partials/footer.php'; ?>
     <!-- Optional JavaScript -->

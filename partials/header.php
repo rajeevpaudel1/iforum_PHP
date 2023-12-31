@@ -42,6 +42,7 @@ echo '
     </div>
 </nav>';
 //- Navbar Ends
+
 include 'partials/signupModal.php';
 include 'partials/loginModal.php';
 
